@@ -1,16 +1,54 @@
 /*Navbar*/
 .navbar-collapse {
-	padding-left: 35%;
+    padding-left: 35%;
 }
 
 /*Tab contant*/
 .container {
-	background-color: #C5EED9;
-	padding: 0;
+    background-color: #C5EED9;
+    padding: 0;
 }
 .tab-content {
-	padding-left: 50px;
-	padding-right: 30px;
+   text-align: center;
+}
+
+/*Home page Images*/
+.profilPicture {
+    margin-left: 25%;
+}
+.sectionSkils {
+    text-align: center;
+    
+    border-bottom: 2px solid #928B8B;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.holderImg {
+    display: inline-block;
+    width: 65px;
+    margin: 14px;
+    text-align: center;
+}
+.imgJS {
+    margin-left: 7px;
+}
+.imgjQuery {
+    width: 60px;
+    margin-left: 20px; 
+    text-align: center;
+}
+.imgAJAX {
+    width: 115px;
+}
+.imgPostman {
+    width: 140px;
+}
+.imgKinvey {
+    width: 180px;
+}
+.row {
+    margin: 0px;
 }
 
 
