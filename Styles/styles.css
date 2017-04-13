@@ -1,0 +1,17 @@
+/*Navbar*/
+.navbar-collapse {
+	padding-left: 35%;
+}
+
+/*Tab contant*/
+.container {
+	background-color: #C5EED9;
+	padding: 0;
+}
+.tab-content {
+	padding-left: 50px;
+	padding-right: 30px;
+}
+
+
+
