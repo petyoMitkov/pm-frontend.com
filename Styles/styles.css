@@ -15,14 +15,30 @@
 /*Home page Images*/
 .profilPicture {
     margin-left: 25%;
+    width: 75%;
+    margin-bottom: 20px;
 }
-.sectionSkils {
-    text-align: center;
-    
-    border-bottom: 2px solid #928B8B;
+.pmInfo {
+    width: 50%;
+    margin-left: 40%;
+}
+.pmInfo > p {
+    color: red;    
+}
+.sectionSkils { 
+    text-align: center;  
+    color: #080606;  
+    margin-top: 50px;
+    margin-bottom: 30px;
     margin-left: 5%;
-    margin-right: 5%;
-
+    width: 90%;
+    border-bottom: 1px solid #0F0D0D; 
+}
+.sectionSkilsBody {
+    margin-top: 50px;
+}
+.row {
+    margin-left: 50px;
 }
 .holderImg {
     display: inline-block;
@@ -30,8 +46,8 @@
     margin: 14px;
     text-align: center;
 }
-.imgJS {
-    margin-left: 7px;
+.imgJS, .imgBootstrap {
+    margin-left: 0px;
 }
 .imgjQuery {
     width: 60px;
@@ -50,6 +66,35 @@
 .row {
     margin: 0px;
 }
+/*Other Tools*/
+.otherTools > ul > li {
+    display: inline-block;
+    width: 150px;
+    font-size: 1.2em;
+    margin: 5px 5px;
+    padding: 15px 15px;
+    background-color: #343433;
+    color: #FEFEFE;
+    border-radius: 10px;
+}
+.otherTools > ul {
+    padding: 10px;
+}
 
+/*Responsive*/
+@media screen and (max-width: 768px) {
+    .profilPicture {
+        margin-left: 12%;
+    }
+    .navbar-collapse {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .pmInfo {
+        width: 90%;
+        margin-left: 5%;
 
+    }
+
+}
 
