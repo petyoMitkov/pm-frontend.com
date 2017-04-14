@@ -71,6 +71,7 @@
 .row {
     margin: 0px;
 }
+
 /*Other Tools*/
 .otherTools > ul > li {
     display: inline-block;
@@ -87,9 +88,41 @@
     padding-right: 10px;
 }
 .otherTools > ul {
-    padding: 10px;
-    
+    padding: 10px; 
 }
+
+/*View Projects section*/
+.listProjects {
+    border: 2px solid red;
+    margin-left: 5px;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid green;
+    background-color: #C8C2C2;
+    border-radius: 10px;
+}
+.listProjects > a {
+    background-color: #EB9C20;
+    padding: 10px 50px;
+    margin-top: 40px;
+    color: #040000;    
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #040000;
+
+}
+.listProjects > a:hover {
+    color: #FFFFFF;
+    background-color: #DA7C03;
+}
+.imgProjects {
+    width: 100%;   
+}
+.imgHorizontal {
+    padding-left: 0%;
+}
+
 /*Footer*/
 .row-footer  {
     margin-top: 60px;
@@ -119,7 +152,6 @@
     color: #F0EEEE;
 }
 
-
 /*Responsive*/
 @media screen and (max-width: 768px) {
     .profilPicture {
@@ -132,11 +164,9 @@
     .pmInfo {
         width: 90%;
         margin-left: 5%;
-
     }
     .otherTools {
         padding-left: 0px;
     }
-
 }
 
