@@ -23,7 +23,12 @@
     margin-left: 40%;
 }
 .pmInfo > p {
-    color: red;    
+    color: #4F4E4E; 
+    font-weight: bold; 
+    font-size: 1.2em;  
+}
+.pmInfo > h1, .pmInfo > h4 {
+    font-weight: bold;
 }
 .sectionSkils { 
     text-align: center;  
@@ -77,9 +82,43 @@
     color: #FEFEFE;
     border-radius: 10px;
 }
+.otherTools {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .otherTools > ul {
     padding: 10px;
+    
 }
+/*Footer*/
+.row-footer  {
+    margin-top: 60px;
+    padding: 20px 0px 20px 0px;
+    background-color: #222;
+    color: #FEFEFE;
+}
+.foterLinks > p {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 0.8em;
+    color: #918D8D;
+}
+.foterLinks > a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 50px;
+    color: #918D8D;
+}
+.copyright {
+    margin-top: 60px;
+    color: #918D8D;
+}
+.foterLinks a:hover {
+    color: #F0EEEE;
+}
+
 
 /*Responsive*/
 @media screen and (max-width: 768px) {
@@ -94,6 +133,9 @@
         width: 90%;
         margin-left: 5%;
 
+    }
+    .otherTools {
+        padding-left: 0px;
     }
 
 }
