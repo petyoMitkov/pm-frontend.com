@@ -91,36 +91,29 @@
     padding: 10px; 
 }
 
-/*View Projects section*/
-.listProjects {
-    border: 2px solid red;
-    margin-left: 5px;
-    padding: 10px;
-    font-weight: bold;
-    border: 1px solid green;
-    background-color: #C8C2C2;
-    border-radius: 10px;
-}
-.listProjects > a {
-    background-color: #EB9C20;
-    padding: 10px 50px;
-    margin-top: 40px;
-    color: #040000;    
+/*View Projects*/
+.project {
+    background-color: #C5EED9;
+    margin-bottom: 50px;
+    padding-bottom: 55px;
+    padding: 5px;
+    border: 1px solid #CBCBCB;
     border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    border: 1px solid #040000;
-
 }
-.listProjects > a:hover {
+.project:hover {
+    background-color: #5B5A5A;
     color: #FFFFFF;
-    background-color: #DA7C03;
 }
-.imgProjects {
-    width: 100%;   
+.project > .btn {
+    background-color: #FF9205;
+    line-height: 5px;
 }
-.imgHorizontal {
-    padding-left: 0%;
+.project > .btn:hover {
+    background-color: #FFFFFF;
+}
+.project > p {
+    padding-top: 5px;
+    margin-bottom: 5px;
 }
 
 /*Footer*/
