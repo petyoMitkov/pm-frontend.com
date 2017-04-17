@@ -147,6 +147,7 @@
 .panel-body > a {
     color: #FFFFFF;
 }
+/*View Contacts*/
 
 /*Footer*/
 .row-footer  {
@@ -155,23 +156,33 @@
     background-color: #222;
     color: #FEFEFE;
 }
-.foterLinks > p {
+.footerLinks {
+    width: 250px;
+    margin-left: 80px;
+    color: #918D8D;
+}
+.footerLinks > p {
     font-weight: bold;
     text-align: left;
-    padding-left: 50px;
     font-size: 0.8em;
     color: #918D8D;
 }
-.foterLinks > a {
+.footerLinks > a {
     display: block;
     margin-bottom: 10px;
-    text-align: left;
-    padding-left: 50px;
+    text-align: left; 
     color: #918D8D;
+    text-decoration: none;
 }
-.copyright {
-    margin-top: 60px;
+.footerLinks > h6 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.copyright {    
+    margin-top: 50px;
     color: #918D8D;
+
 }
 .foterLinks a:hover {
     color: #F0EEEE;
@@ -200,6 +211,15 @@
     .panel-body {
         padding: 10px;
     }
-    
+    .foterLinks {
+        width: 200px;
+        padding-left: 10px;
+        color: #918D8D;
+    }
+    .copyright {
+        margin-top: 100px;
+    }
+
+
 }
 
