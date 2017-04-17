@@ -96,24 +96,17 @@
     background-color: #C5EED9;
     margin-bottom: 50px;
     padding: 5px 5px 10px 5px;
-    /*border: 1px solid #CBCBCB;*/
-    
     border-radius: 5px;
     transition: box-shadow 0.2s; 
     box-shadow: 5px 5px 40px #131111;
     font-weight: bold;
-
 }
-.project:hover {
-    /*background-color: #222;*/
-    
+.project:hover {    
     box-shadow: 5px 5px 40px #131111;
 }
 .project > div {
     display: inline-block;
-    
 }
-
 .project > img {
     margin-bottom: 5px;
 }
@@ -124,6 +117,38 @@
 .project > .btn:hover {
     background-color: #FFFFFF;
 }
+
+/*View Useful Info*/
+.rowInfo {
+   margin-left: 15%;
+   margin-right: 15%;  
+}
+.panel-heading {
+    padding: 0;
+    margin: 0; 
+}
+.panel-title {
+    background-color: #222;
+    color: #908F8F;
+    padding: 10px;
+    margin: 0px;
+    text-align: left; 
+}
+.panel-title:hover {d
+    color: #FCF8F8;
+}
+.panel-body {
+    background-color: #403939;
+    padding:25px;
+    margin: 0; 
+    color: #FFFFFF; 
+    text-align: left; 
+}
+.panel-body > a {
+    color: #FFFFFF;
+}
+
+
 
 /*Footer*/
 .row-footer  {
@@ -169,6 +194,15 @@
     }
     .otherTools {
         padding-left: 0px;
+    }
+    .rowInfo {
+       margin-left: 0;
+       margin-right: 0;  
+    }
+    .panel-body {
+       
+        padding: 10px;
+        
     }
 }
 
