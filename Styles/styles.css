@@ -109,11 +109,15 @@
     
     box-shadow: 5px 5px 40px #131111;
 }
+.project > div {
+    display: inline-block;
+    
+}
 
 .project > img {
     margin-bottom: 5px;
 }
-.project > .btn {
+.project > div > .btn {
     background-color: #FF9205;
     line-height: 5px;
 }
