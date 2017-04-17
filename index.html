@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <title>Petyo Mitkov Portfolio</title>  
   <link rel="icon" type="image/png" href="Images/logo.png"/>
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="Styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 <body>
 
@@ -33,7 +33,7 @@
           <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
           <li><a data-toggle="tab" href="#projects">Projects</a></li>
           <li><a data-toggle="tab" href="#usefulInfo">Useful Info</a></li>
-          <li><a data-toggle="tab" href="#contacts">Contacts</a></li>
+          <li><a data-toggle="tab" href="#contacts" id="loadCont">Contacts</a></li>
         </ul>
       </div>
     </div>
@@ -168,10 +168,16 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <div class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                  Free Website Hosting + Custom Domain with Github Pages (Video from Christian Genco)
+                  <div class="articleName">
+                    Free Hosting + Custom Domain with Github
+                  </div>                  
+                  <div class="acordeonResize">
+                    <i class="fa fa-arrows-v"></i>
+                    <span>click to switch content</span>
+                  </div>
                 </div>       
               </div>
-              <div id="collapse1" class="panel-collapse collapse">
+              <div id="collapse1" class="panel-collapse collapse in">
                 <div class="panel-body" style="border: none;">
                   <iframe width="100%" height="315" src="https://www.youtube.com/embed/CJLb8UUIJPg" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -180,10 +186,16 @@
             <div class="panel panel-default">
               <div class="panel-heading">
                 <div class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                  Work with Git &amp; GitHub
+                  <div class="articleName">
+                    <span>Work with Git &amp; GitHub</span>
+                  </div>
+                  <div class="acordeonResize">
+                    <i class="fa fa-arrows-v"></i>
+                    <span>click to switch content</span>
+                  </div>
                 </div>       
               </div>
-              <div id="collapse2" class="panel-collapse collapse">
+              <div id="collapse2" class="panel-collapse collapse in">
                 <div class="panel-body" style="border: none;">
                   <h3>This article explains  the steps you need follow to set and work with Git.</h3>
                   <h4>$ git init</h4>
@@ -202,50 +214,88 @@
           </div>
         </div>     
       </div>
-
     </div>
     <div id="contacts" class="tab-pane fade">
-      <h3>Contacts</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <div class="row">
+        <div class="col-sm-4" >
+          <h2 class="text-center">Contacts</h2>
+          <div class="contactInfo">
+            <p><span class="glyphicon glyphicon-map-marker"></span> Drujba 1,  Sofia, Bulgaria</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +359 886749532</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> petyo.mitkov@gmail.com</p>
+          </div>         
+          
+        </div>
+        <div class="col-sm-7">
+          <div class="container slideanim" id="map" style="width:100%; height:400px;"></div>
+        </div>
+      </div>              
     </div>
   </div>
-
 </div>
+
 <footer class="container text-center">
   <div class="row row-footer">
-    <div class="col-sm-4 footerLinks">
-      <h6>Links:</h6>
+    <div class="col-sm-6 footerLinks">
+      <h6>Links</h6>
       <a href="https://github.com/petyoMitkov" target="_blank">
-        <i class="fa fa-github" style="font-size:20px;"></i>
+        <i class="fa fa-github" style="font-size:14px;"></i>
           GitHub        
       </a>
       <a href="https://www.facebook.com/petyo.mitkov" target="_blank">
-        <i class="fa fa-facebook-square" style="font-size:18px;"></i>
+        <i class="fa fa-facebook-square" style="font-size:14px;"></i>
           Facebook        
       </a>
     </div>     
-    <div class="col-sm-4 footerLinks">
+    <div class="col-sm-6 footerLinks">
         <h6>Contacts</h6>
-        
         <p>
          <span class="glyphicon glyphicon-map-marker" style="font-size:14px;"> </span>
          Sofia, Bulgaria
         </p> 
         <p>
-          <i class="fa fa-mobile" aria-hidden="true" style="font-size:20px;"></i>
-          Mobile: +359 886749532
+          <i class="fa fa-mobile" aria-hidden="true" style="font-size:14px;"></i>
+           Mobile: +359 886749532
         </p>
         <p>
-           <i class="fa fa-envelope-o" style="font-size:14px"> petyo.mitkov@gmail.com</i>
-        </p>
-       
-
-      
-        <p class="copyright"> &copy; 2017 Petyo Mitkov - All rights reserved.</p>
-         
+           <i class="fa fa-envelope-o" style="font-size:14px"></i>
+            petyo.mitkov@gmail.com
+        </p>       
+    </div>
+    <div class="col-sm-12">
+      <p class="copyright"> &copy; 2017 Petyo Mitkov - All rights reserved.</p>
     </div>
   </div>
 </footer>
+
+<script>
+  setTimeout(function() {
+    $("#map").hide();
+  }, 1);
+
+  $("#loadCont").click(function() {
+    setTimeout(function() {
+      $("#map").show(initMap);
+    }, 200);
+  });
+
+  function initMap() {
+    var uluru = {lat: 42.665180, lng: 23.399726};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      scrollwheel:false, 
+      center: uluru,
+      mapTypeId: google.maps.MapTypeId.ROADMAP  //SATELLITE, HYBRID, and TERRAIN.
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv8D3AssSgcPfFNPYuGO_dnhlbXXvrq8o&callback=initMap">
+  //get key from Google API 
+</script>
 
 </body>
 </html>

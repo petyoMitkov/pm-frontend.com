@@ -114,7 +114,7 @@
     background-color: #FF9205;
     line-height: 5px;
 }
-.project > .btn:hover {
+.project > div > .btn:hover {
     background-color: #FFFFFF;
 }
 
@@ -136,6 +136,7 @@
 }
 .panel-title:hover {
     color: #FCF8F8;
+    cursor: pointer;
 }
 .panel-body {
     background-color: #403939;
@@ -147,7 +148,26 @@
 .panel-body > a {
     color: #FFFFFF;
 }
+.articleName {
+    
+}
+.acordeonResize {
+    width: 150px;
+    font-size: 0.8em;
+    display: inline;
+    text-align: right;
+}
+
 /*View Contacts*/
+#map {
+    display: inline-block;
+}
+#contacts {
+    text-align: left;  
+}
+.contactInfo {
+    margin-left: 20%;
+}
 
 /*Footer*/
 .row-footer  {
@@ -155,10 +175,11 @@
     padding: 20px 0px 20px 0px;
     background-color: #222;
     color: #FEFEFE;
+    font-size: 14px;
 }
 .footerLinks {
     width: 250px;
-    margin-left: 80px;
+    margin-left: 100px;
     color: #918D8D;
 }
 .footerLinks > p {
@@ -174,6 +195,9 @@
     color: #918D8D;
     text-decoration: none;
 }
+.footerLinks > a:hover {
+    color: #FBFAFA;
+}
 .footerLinks > h6 {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -182,7 +206,6 @@
 .copyright {    
     margin-top: 50px;
     color: #918D8D;
-
 }
 .foterLinks a:hover {
     color: #F0EEEE;
@@ -211,15 +234,21 @@
     .panel-body {
         padding: 10px;
     }
-    .foterLinks {
-        width: 200px;
-        padding-left: 10px;
+    .contactInfo {
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footerLinks {
+        width: 90%;
+        margin-left: 20px;
+
         color: #918D8D;
     }
     .copyright {
         margin-top: 100px;
+        padding-right: 0;
     }
-
-
 }
-
