@@ -1,11 +1,29 @@
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
 /*Navbar*/
 .navbar-collapse {
     padding-left: 35%;
 }
+.container-fluid > .navbar {
+    background-color: #222;
+}
+.navbar-inverse {
+    border-radius: 0px;
+}
+.container-fluid > .navbar-header {
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-toggle {
+     margin-right: 50px;
+}
 
 /*Tab contant*/
-.container {
-    background-color: #C5EED9;
+.navContainer {
+    background-color: #A2E0C0;  /*#A2E0C0; /*#C5EED9;*/
     padding: 0;
 }
 .tab-content {
@@ -73,6 +91,9 @@
 }
 
 /*Other Tools*/
+.otherTools {
+    margin-bottom: 60px;
+}
 .otherTools > ul > li {
     display: inline-block;
     width: 150px;
@@ -125,7 +146,7 @@
 }
 .panel-heading {
     padding: 0;
-    margin: 0; 
+    margin: 0;  
 }
 .panel-title {
     background-color: #222;
@@ -148,9 +169,6 @@
 .panel-body > a {
     color: #FFFFFF;
 }
-.articleName {
-    
-}
 .acordeonResize {
     width: 150px;
     font-size: 0.8em;
@@ -171,7 +189,6 @@
 
 /*Footer*/
 .row-footer  {
-    margin-top: 60px;
     padding: 20px 0px 20px 0px;
     background-color: #222;
     color: #FEFEFE;
