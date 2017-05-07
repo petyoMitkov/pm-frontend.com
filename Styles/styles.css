@@ -191,6 +191,11 @@
 }
 
 /*Footer*/
+audio {
+    width: 100px;
+    display: inline-block;
+    margin-left: 30%;
+}
 .row-footer  {
     padding: 20px 0px 20px 0px;
     background-color: #222;
@@ -232,6 +237,16 @@
 }
 
 /*Responsive*/
+
+@media screen and (max-width: 1060px) {
+    audio {
+        position: relative;
+        width: 100px;
+        display: inline-block;
+        margin-left: 0%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .profilPicture {
         margin-left: 25%;
@@ -279,4 +294,8 @@
         margin-top: 100px;
         padding-right: 0;
     }
+    audio {
+        margin-left: 60%;
+    }
+    
 }
