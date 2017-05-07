@@ -17,9 +17,6 @@
     margin: 0px;
     padding: 0px;
 }
-.navbar-toggle {
-     margin-right: 50px;
-}
 
 /*Tab contant*/
 .navContainer {
@@ -32,8 +29,8 @@
 
 /*Home page Images*/
 .profilPicture {
-    margin-left: 25%;
-    width: 75%;
+    margin-left: 40%;
+    width: 60%;
     margin-bottom: 20px;
 }
 .pmInfo {
@@ -92,7 +89,9 @@
 
 /*Other Tools*/
 .otherTools {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .otherTools > ul > li {
     display: inline-block;
@@ -181,10 +180,14 @@
     display: inline-block;
 }
 #contacts {
-    text-align: left;  
+    text-align: left; 
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .contactInfo {
     margin-left: 20%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /*Footer*/
@@ -231,7 +234,8 @@
 /*Responsive*/
 @media screen and (max-width: 768px) {
     .profilPicture {
-        margin-left: 12%;
+        margin-left: 25%;
+        width: 50%;
     }
     .navbar-collapse {
         text-align: center;
@@ -242,7 +246,10 @@
         margin-left: 5%;
     }
     .otherTools {
-        padding-left: 0px;
+        margin-bottom: 100px;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 0;
     }
     .rowInfo {
        margin-left: 0;
@@ -258,6 +265,10 @@
 }
 
 @media screen and (max-width: 420px) {
+    .profilPicture {
+        margin-left: 20%;
+        width: 60%;
+    }
     .footerLinks {
         width: 90%;
         margin-left: 20px;
