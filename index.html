@@ -32,10 +32,10 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="#"></a></li>
-          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-          <li><a data-toggle="tab" href="#projects">Projects</a></li>
-          <li><a data-toggle="tab" href="#usefulInfo">Useful Info</a></li>
-          <li><a data-toggle="tab" href="#contacts" id="loadCont">Contacts</a></li>
+          <li class="active"><a class="scroll-top" data-toggle="tab" href="#home">Home</a></li>
+          <li><a class="scroll-top" data-toggle="tab" href="#projects">Projects</a></li>
+          <li><a class="scroll-top" data-toggle="tab" href="#usefulInfo">Useful Info</a></li>
+          <li><a class="scroll-top" data-toggle="tab" href="#contacts" id="loadCont">Contacts</a></li>
         </ul>                 
       </div>
     </div>
@@ -113,16 +113,88 @@
         </div>         
       </div>
     </div>
-    <div id="projects" class="tab-pane fade">       
-      <h3>Projects &amp; Demos</h3><br>
+    <div id="projects" class="tab-pane fade">  
+
+      <!--Apartament Elinor-->
+      <div class="row slideanim"> 
+        <div class="col-sm-12 beSmart" >
+          <h3>Project Apartments Elinor Sozopol - not finished!</h3>
+            <p style="font-weight: bold;">Technologies: HTML, CSS, Bootstrap, jQuery, AngularJS</p>
+           
+            <p> <a href="https://petyomitkov.github.io/ElinorSozopol/#!/" target="_blank">https://petyomitkov.github.io/ElinorSozopol/#!/</a></p>
+            <div class="divInfo">
+              <p></p>
+            </div>     
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6"> 
+            <div class="project">
+              <img src="Images/elinor/elinor1.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+          </div>
+          <div class="col-sm-6"> 
+            <div class="project">
+              <img src="Images/elinor/elinor2.jpg" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!--Be SMART-->
+      <div class="row" style="margin-top: 100px;">
+       
+        <div class="col-sm-12 beSmart" >
+          <h3>Project Be SMART - not finished!</h3>
+            <p style="font-weight: bold;">Technologies: HTML, CSS, Bootstrap, TypeScript, jQuery, Kinvey, Angular 2</p>
+            <div class="divInfo">
+              <p>There are 2 types of user role. Admin rolе can add, delete and edit the employee in the list of employees.Simple User's role can only read the content. Both roll have to be login with usernema and pass to see the employees list. Be SMART is a model for scale the skils of people who work in specific customer service center.</p><p> S for SEVICE, M for MEMORABLE, A for ACCURACY, R for RELEVANCE, T for TEAM WORK</p>
+            </div>     
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6"> 
+          <div class="project">
+            <img src="Images/beSmart/beSmart1.png" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+        </div>
+        <div class="col-sm-6"> 
+          <div class="project">
+            <img src="Images/beSmart/beSmart2.png" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6"> 
+          <div class="project">
+            <img src="Images/beSmart/beSmart4.png" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+        </div>
+        <div class="col-sm-6"> 
+          <div class="project">
+            <img src="Images/beSmart/beSmart5.png" class="img-responsive" style="width:100%" alt="Image">
+          </div>
+        </div>
+      </div>           
+
+     
+
+      <!--Projects & Demos-->
       <div class="row slideanim">
+        <br>
+       <h3>Projects &amp; Demos</h3><br><br>
         <div class="col-sm-4">
           <div class="project">
             <video width="100%" height="100%" controls poster="Videos/picBookLibrary.png" loop>
       			  <source src="Videos/videoBookLibrary-smallHD.mp4" type="video/mp4">
       			    Video tag does not supported. Update your wed brawser. 
       			</video>
-            <span>Book Library: </span>
+            <h4>Book Library</h4>
+            <p>Technologies: HTML, CSS, JavaScript, jQuery, Kinvey</p>
             <div>
               <a href="https://petyomitkov.github.io/BookLibrary/" target="_blank" class="btn btn-default">Go Live</a>
               <a href="https://github.com/petyoMitkov/BookLibrary" target="_blank" class="btn btn-default">View Code</a>
@@ -134,8 +206,9 @@
             <video width="100%" height="100%" controls poster="Videos/picPhoneBook.jpg" loop>
       			  <source src="Videos/videoPhonebook-smallHD.mp4" type="video/mp4">
       			    Video tag does not supported. Update your wed brawser. 
-      			</video>
-            <span>Phonebook: </span>
+      			</video>            
+            <h4>Phonebook</h4>
+            <p>Technologies: HTML, CSS, JavaScript, jQuery, Firebase</p>
             <div>
               <a href="https://petyomitkov.github.io/PhoneBook/" target="_blank" class="btn btn-default">Go Live</a>
               <a href="https://github.com/petyoMitkov/PhoneBook" target="_blank" class="btn btn-default">View Code</a>
@@ -145,7 +218,8 @@
         <div class="col-sm-4"> 
           <div class="project">
             <img src="Images/bootstrapExample_1.gif" class="img-responsive" style="width:100%" alt="Image">
-            <span>Bootstrap: </span>
+            <h4>Bootstrap Exercise</h4>
+            <p>Technologies: HTML, CSS, jQuery, Bootstrap</p>
             <div>
               <a href="https://petyomitkov.github.io/Bootstrap/02.%20Bootstrap%20Theme%20Company/index.html" target="_blank" class="btn btn-default">Go Live</a>
               <a href="https://github.com/petyoMitkov/Bootstrap/tree/master/02.%20Bootstrap%20Theme%20Company" target="_blank" class="btn btn-default">View Code</a>
@@ -154,10 +228,13 @@
         </div>       
       </div>
       <div class="row slideanim">
+        
         <div class="col-sm-4">
           <div class="project">
             <img src="Images/marioDemo.gif" class="img-responsive" style="width:100%" alt="Image">
-            <span>Mario BETA: </span>
+            <h4>Super Mario BETA</h4>
+            <p>Technologies: HTML5 Canvas, JavaScript</p>
+            <p>Note: Works only on Desktop</p>
             <div>
               <a href="https://petyomitkov.github.io/Canvas/@%20Project_Super%20Mario%20Game/index.html" target="_blank" class="btn btn-default">Go Live</a>
               <a href="https://github.com/petyoMitkov/Canvas/tree/master/%40%20Project_Super%20Mario%20Game" target="_blank" class="btn btn-default">View Code</a>
@@ -173,6 +250,25 @@
         <div class="col-sm-12">
           <div class="panel-group" id="accordion">
             
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                  <div class="articleName">
+                    <span>Deploying an Angular 2 App to GitHub</span>
+                  </div>
+                  <div class="acordeonResize">
+                    <i class="fa fa-arrows-v"></i>
+                    <span>click to switch content</span>
+                  </div>
+                </div>       
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <div class="panel-body" style="border: none;">
+                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/nxV3weqMzYo" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
             <div class="panel panel-default">
               <div class="panel-heading">
                 <div class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
@@ -298,20 +394,20 @@
     </div>
   </div>
 </footer>
+<!--Animation-->
 <script>
-  setInterval(function() {
-   // $(document).scroll(function() {
-      $(".slideanim").each(function() {
-        let pos = $(this).offset().top;
-        let winTop = $(window).scrollTop();
-        if (pos < winTop + 500) {
-          $(this).addClass("slide");
-        }
-      });    
-    //})
-  }, 100);
+   
 </script>
 
+<!--Scroll top the page-->
+<script type="text/javascript">
+  /* smooth scrolling for scroll to top */
+  $('.scroll-top').click(function(){
+    $('body,html').animate({scrollTop:0},1000);
+  })
+</script>
+
+<!--Goole Maps-->
 <script>
   setTimeout(function() {
     $("#map").hide();   
@@ -350,8 +446,8 @@
 
   ga('create', 'UA-97827072-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
 
 </body>
 </html>

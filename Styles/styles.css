@@ -9,6 +9,9 @@
 }
 .container-fluid > .navbar {
     background-color: #222;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 .navbar-inverse {
     border-radius: 0px;
@@ -32,10 +35,13 @@
     margin-left: 40%;
     width: 60%;
     margin-bottom: 20px;
+    margin-top: 100px;
 }
 .pmInfo {
     width: 50%;
     margin-left: 40%;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 .pmInfo > p {
     color: #4F4E4E; 
@@ -48,8 +54,8 @@
 .sectionSkils { 
     text-align: center;  
     color: #080606;  
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     margin-left: 5%;
     width: 90%;
     border-bottom: 1px solid #0F0D0D; 
@@ -89,7 +95,8 @@
 
 /*Other Tools*/
 .otherTools {
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -97,8 +104,8 @@
     display: inline-block;
     width: 150px;
     font-size: 1.2em;
-    margin: 5px 5px;
-    padding: 15px 15px;
+    margin: 15px 15px;
+    padding: 5px 15px;
     background-color: #343433;
     color: #FEFEFE;
     border-radius: 10px;
@@ -112,8 +119,20 @@
 }
 
 /*View Projects*/
+#projects {
+    margin-top: 100px;
+}
+.beSmart {
+    margin-bottom: 50px;
+}
+.divInfo {
+    width: 70%;
+    margin: 0 15%;
+}
+
 .project {
     background-color: #C5EED9;
+    margin-top: 0px;
     margin-bottom: 50px;
     padding: 5px 5px 10px 5px;
     border-radius: 5px;
@@ -132,16 +151,22 @@
 }
 .project > div > .btn {
     background-color: #FF9205;
-    line-height: 5px;
+    line-height: 15px;
+    width: 150px;
+    margin-top: 10px;
+    
 }
 .project > div > .btn:hover {
     background-color: #FFFFFF;
 }
 
 /*View Useful Info*/
+#usefulInfo{ 
+    margin-top: 80px;
+}
 .rowInfo {
-   margin-left: 15%;
-   margin-right: 15%;  
+    margin-left: 15%;
+    margin-right: 15%;  
 }
 .panel-heading {
     padding: 0;
@@ -181,7 +206,7 @@
 }
 #contacts {
     text-align: left; 
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 60px;
 }
 .contactInfo {
